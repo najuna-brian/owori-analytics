@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Owori Analytics | Biostatistics and data analysis tutorials in SPSS, Stata and R</title>
+  <meta name="description" content="Free, step-by-step biostatistics and data analysis courses in SPSS, Stata and R. Learn to choose the right test, check assumptions, build models and report results for your thesis or research.">
+  <meta property="og:title" content="Owori Analytics">
+  <meta property="og:description" content="Free, step-by-step biostatistics and data analysis courses in SPSS, Stata and R.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div class="eyebrow">Biostatistics, epidemiology and data analysis</div>
+        <h1>Analyse your research data with <em>confidence</em>.</h1>
+        <p class="lead">Free, step-by-step tutorials that take you from entering your first dataset to regression and survival analysis. Built for students, researchers and public health practitioners.</p>
+        <div class="hero-cta">
+          <a class="btn btn-amber" href="#courses">Start learning</a>
+          <a class="btn btn-onDark" href="test-finder.html">Find the right statistical test</a>
+        </div>
+        <div class="hero-tools"><span>Taught in</span><b>SPSS</b><b>Stata</b><b>R</b></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 460 330" font-family="Inter, Segoe UI, sans-serif">
+          <text x="8" y="22" fill="#fff" font-size="15" font-weight="600">Survival by treatment group</text>
+          <text x="8" y="42" fill="#9DB3D0" font-size="12">Kaplan-Meier estimate</text>
+          <g stroke="rgba(255,255,255,.12)" stroke-width="1"><path d="M44 70H452M44 118H452M44 166H452M44 214H452"/></g>
+          <path d="M44 62V262H452" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+          <g fill="#9DB3D0" font-size="11"><text x="14" y="74">1.0</text><text x="14" y="170">0.5</text><text x="14" y="266">0.0</text><text x="40" y="282">0</text><text x="240" y="282">12</text><text x="436" y="282">24</text><text x="210" y="300">Months of follow-up</text></g>
+          <path d="M44 70H90V84H130V96H176V106H224V118H270V126H322V136H372V142H452" fill="none" stroke="#2EC4B6" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M44 70H76V94H112V118H150V142H196V160H238V180H286V196H338V210H392V222H452" fill="none" stroke="#FFB400" stroke-width="3.5" stroke-linejoin="round"/>
+          <g fill="#fff" font-size="12"><circle cx="300" cy="84" r="5" fill="#2EC4B6"/><text x="312" y="88">Treatment</text><circle cx="388" cy="84" r="5" fill="#FFB400"/><text x="400" y="88">Control</text></g>
+          <g font-size="12" font-weight="600"><rect x="44" y="296" width="0" height="0"/><rect x="8" y="306" width="150" height="24" rx="12" fill="rgba(46,196,182,.18)"/><text x="22" y="322" fill="#7CE6DB">Log-rank p = 0.003</text><rect x="168" y="306" width="232" height="24" rx="12" fill="rgba(255,180,0,.16)"/><text x="182" y="322" fill="#FFD166">HR 0.62 (95% CI 0.45 to 0.85)</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="stats" id="stats"></div></div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Courses</div>
+        <h2>Pick your software and start from lesson one</h2>
+        <p class="lead">Each course follows the order a real analysis happens in. Your progress is saved in your browser, so you can pick up where you stopped.</p>
+      </div>
+      <div class="grid c3" id="courses-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="path">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Learning path</div>
+        <h2>Everything a research project needs, in order</h2>
+        <p class="lead">Start with clean data, choose the right test, then move into models. Open any topic to see every lesson on it.</p>
+      </div>
+      <ol class="path" id="path-list"></ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="finder-teaser split">
+        <div>
+          <div class="eyebrow">Test Finder</div>
+          <h2>Which statistical test should I use?</h2>
+          <p>It is the question every student asks. Answer a few plain questions about your outcome and study design, and get the right test with the lessons that show you how to run it.</p>
+          <div class="hero-cta"><a class="btn btn-amber" href="test-finder.html">Try the Test Finder</a></div>
+        </div>
+        <div class="mock" aria-hidden="true">
+          <div class="q">What type of outcome are you comparing?</div>
+          <div class="o on"><span>Numeric</span><span>Selected</span></div>
+          <div class="o"><span>Categorical</span></div>
+          <div class="q" style="margin-top:8px">How many groups?</div>
+          <div class="o on"><span>Two independent groups</span><span>Selected</span></div>
+          <div class="res"><b>Independent samples t-test</b>Lessons in SPSS and Stata, plus when to switch to a non-parametric test.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head row">
+        <div>
+          <div class="eyebrow">Most watched</div>
+          <h2>Where most learners begin</h2>
+        </div>
+        <a class="btn btn-ghost" href="library.html">Browse the full library</a>
+      </div>
+      <div class="grid videos" id="popular-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Who it is for</div>
+        <h2>Made for people who have data and a deadline</h2>
+      </div>
+      <div class="grid c4">
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11.5V16c2 2 10 2 12 0v-4.5M22 9v5"/></svg></div><h3>Students</h3><p class="muted">Analyse your thesis or dissertation data and explain every table to your examiners.</p></div>
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.800 3h10.400a2 2 0 0 0 1.800-3l-5-9V3M7.500 15h9"/></svg></div><h3>Researchers</h3><p class="muted">Check assumptions, test for interaction and confounding, and report results ready for publication.</p></div>
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div><h3>Public health practitioners</h3><p class="muted">Turn programme and surveillance data into evidence you can act on and defend.</p></div>
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4m0 16h16M8 16v-4m4 4V8m4 8v-6"/></svg></div><h3>Data enthusiasts</h3><p class="muted">Build a solid base in statistics and learn three of the most used analysis tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="about">
+    <div class="container split">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>Statistics taught the way you will actually use it</h2>
+        <div class="about-card">
+          <img class="about-photo" id="about-photo" alt="Owori Benard" width="132" height="132">
+          <div>
+            <p><strong>Owori Analytics</strong> is run by <strong>Owori Benard</strong> from Uganda. The channel teaches biostatistics, epidemiology and data analysis through hands-on demonstrations with real data.</p>
+            <p class="muted"><strong id="subs" style="color:var(--text)"></strong> subscribers learn here, from complete beginners to people fitting advanced models.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>What every lesson gives you</h3>
+        <ul class="checks">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span><strong>When to use the test.</strong> The research question and the type of data it fits.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span><strong>Assumption checks.</strong> How to test them and what to do when they fail.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span><strong>Model building.</strong> Variable selection, interaction, confounding and model fit.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span><strong>Interpretation and reporting.</strong> How to read the output and write it up for a thesis or journal.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Work with Owori Analytics</div>
+        <h2>Need more than a tutorial?</h2>
+        <p class="lead">Get direct help with your own data, your team or your research project.</p>
+      </div>
+      <div class="grid c3">
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4m0 16h16M8 16v-4m4 4V8m4 8v-6"/></svg></div><h3>Data analysis support</h3><p class="muted">Cleaning, analysis and clear reporting for research studies, surveys and programme data.</p></div>
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0M16 4.600a3.500 3.500 0 0 1 0 6.800M18 14a6.500 6.500 0 0 1 3.500 6"/></svg></div><h3>Training and workshops</h3><p class="muted">Practical SPSS, Stata and R training for university departments, research teams and organisations.</p></div>
+        <div class="card"><div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.500 8.500-2 5-5 2 2-5z"/></svg></div><h3>Thesis and research guidance</h3><p class="muted">Guidance on analysis plans, choosing tests and interpreting results for students and researchers.</p></div>
+      </div>
+      <div class="hero-cta"><a class="btn btn-primary" data-contact href="#">Get in touch</a></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cta-band">
+      <div><h2>New lessons, straight to your feed</h2><p>Subscribe on YouTube and turn on notifications so you never miss a tutorial.</p></div>
+      <div class="hero-cta"><a class="btn btn-amber" href="https://www.youtube.com/@OworiAnalytics?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a></div>
+    </div>
+  </section>
+</main>
+<script src="data/channel.js"></script>
+<script src="data/site.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

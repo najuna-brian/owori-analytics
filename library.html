@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video library | Owori Analytics</title>
+  <meta name="description" content="Search every Owori Analytics tutorial by topic and software: SPSS, Stata, R and statistics concepts.">
+  <meta property="og:title" content="Video library | Owori Analytics">
+  <meta property="og:description" content="Search every Owori Analytics tutorial by topic and software: SPSS, Stata, R and statistics concepts.">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<main>
+  <section class="page-hero"><div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> / Library</div>
+    <div class="eyebrow">Video library</div>
+    <h1>Find the exact lesson you need</h1>
+    <p>Search every tutorial by test, model or software. Videos you have watched are ticked.</p>
+  </div></section>
+  <div class="container">
+    <div class="toolbar">
+      <label class="search"><span class="sr-only">Search lessons</span><span id="search-icon"></span><input id="q" type="search" placeholder="Search, for example logistic regression or ANOVA" autocomplete="off"></label>
+      <label><span class="sr-only">Topic</span><select class="select" id="topic"></select></label>
+      <label><span class="sr-only">Sort</span><select class="select" id="sort"><option value="course">Course order</option><option value="views">Most watched</option><option value="short">Shortest first</option><option value="long">Longest first</option></select></label>
+    </div>
+    <div class="filters" id="filters"></div>
+    <p class="result-count" id="count" aria-live="polite"></p>
+    <div class="grid videos" id="grid"></div>
+    <div class="empty" id="empty" hidden><p>No lessons match that search.</p><button class="btn btn-ghost btn-sm" id="reset" type="button">Clear filters</button></div>
+  </div>
+</main>
+<script src="data/channel.js"></script>
+<script src="data/site.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/library.js"></script>
+</body>
+</html>
